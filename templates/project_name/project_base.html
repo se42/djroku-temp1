@@ -10,7 +10,7 @@
 
 		<title>
 		{% block title %}
-		{{ project_name }}
+		PROJECT_NAME
 		{% endblock title %}
 		</title>
 
@@ -22,9 +22,9 @@
 
 		<!-- Custom styles for this template -->
 		
-<!-- 		load staticfiles
-		<link href="static '{{ project_name }}/css/project_base.css'" rel="stylesheet">
-		<link rel="icon" href="static '{{ project_name }}/img/favicon.ico'"> -->
+		{% load staticfiles %}
+		<link href="static 'PROJECT_NAME/css/project_base.css'" rel="stylesheet">
+		<link rel="icon" href="static 'PROJECT_NAME/img/favicon.ico'">
 
 		{% block head %}
 		{% endblock head %}
@@ -43,7 +43,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="{% url 'site_home' %}">{{ project_name }}</a>
+					<a class="navbar-brand" href="{% url 'site_home' %}">PROJECT_NAME</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
